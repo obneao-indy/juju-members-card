@@ -14,7 +14,8 @@ const demoSoundHorrors = [
   { id: "demo-3", title: "\u304a\u6bcd\u3055\u3093\u5f79\u306e\u64cd\u308a\u4eba\u5f62" },
   { id: "demo-4", title: "\u907a\u68c4\u3055\u308c\u305f\u9ed2\u96fb\u8a71" },
   { id: "demo-5", title: "\u75c5\u5451\u5b88\u308a" },
-  { id: "demo-6", title: "\u5751\u5185\u99ac\u306e\u8e44\u9244" }
+  { id: "demo-6", title: "\u5751\u5185\u99ac\u306e\u8e44\u9244" },
+  { id: "弔蛍の蛹", title: "弔蛍の蛹" }
 ];
 const soundHorrorTitles = demoSoundHorrors.map((horror) => horror.title);
 const currentSoundHorrors = (horrors = []) =>
@@ -38,6 +39,12 @@ const welcomeCoupon = {
   description: "\u30b5\u30a6\u30f3\u30c9\u30db\u30e9\u30fc\u4e00\u56de\u7121\u6599\uff08\uffe51,000\u4f5c\u54c1\u306e\u307f\u5bfe\u8c61\uff09"
 };
 const relicCatalog = [
+  {
+    id: "local-choukei-no-sanagi",
+    name: "弔蛍の蛹",
+    image: "assets/relics/choukei-no-sanagi.jpg",
+    favoriteImage: "assets/relics/choukei-no-sanagi.jpg"
+  },
   {
     id: "local-byoudon-mamori",
     name: "\u75c5\u5451\u5b88\u308a",

@@ -1810,7 +1810,8 @@ with relic_seed(name, description) as (
   ('遺棄された黒電話', '推し呪物候補'),
   ('お母さん役の操り人形', '推し呪物候補'),
   ('坑内馬の蹄鉄', '推し呪物候補'),
-  ('腹話術人形まぁくん', '推し呪物候補')
+  ('腹話術人形まぁくん', '推し呪物候補'),
+  ('弔蛍の蛹', '推し呪物候補')
 )
 insert into public.relics (name, description, is_active)
 select seed.name, seed.description, true
@@ -1826,7 +1827,8 @@ with horror_seed(title, description) as (
   ('お母さん役の操り人形', 'サウンドホラー初期作品'),
   ('遺棄された黒電話', 'サウンドホラー初期作品'),
   ('病呑守り', 'サウンドホラー初期作品'),
-  ('坑内馬の蹄鉄', 'サウンドホラー初期作品')
+  ('坑内馬の蹄鉄', 'サウンドホラー初期作品'),
+  ('弔蛍の蛹', 'サウンドホラー作品')
 )
 update public.sound_horrors target
 set description = seed.description,
@@ -1842,7 +1844,8 @@ with horror_seed(title, description) as (
   ('お母さん役の操り人形', 'サウンドホラー初期作品'),
   ('遺棄された黒電話', 'サウンドホラー初期作品'),
   ('病呑守り', 'サウンドホラー初期作品'),
-  ('坑内馬の蹄鉄', 'サウンドホラー初期作品')
+  ('坑内馬の蹄鉄', 'サウンドホラー初期作品'),
+  ('弔蛍の蛹', 'サウンドホラー作品')
 )
 insert into public.sound_horrors (title, description, is_active)
 select seed.title, seed.description, true
@@ -1860,7 +1863,8 @@ where title not in (
   'お母さん役の操り人形',
   '遺棄された黒電話',
   '病呑守り',
-  '坑内馬の蹄鉄'
+  '坑内馬の蹄鉄',
+  '弔蛍の蛹'
 );
 
 insert into public.coupons (title, description, expires_at, usage_limit, is_active)

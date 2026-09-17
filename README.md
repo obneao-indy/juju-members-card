@@ -4,6 +4,13 @@
 
 ## 起動
 
+### Ver.0.2.81 の反映
+
+「弔蛍の蛹」をサウンドホラースタンプカード（全7作品）と推し呪物に追加しました。
+既存環境では `supabase/required-update-0.2.81-choukei-no-sanagi.sql` を Supabase SQL Editor で実行し、更新したアプリファイルと画像を公開してください。
+管理画面の店舗QR一覧にも追加されます。付与は既存作品と同じ1回2ptで、5種類達成特典の条件も共通です。
+新規環境向けの `supabase/schema.sql` にも作品を追加済みです。
+
 この環境では通常の `npm` が使えないため、Codex 同梱 Node.js で起動します。
 
 ```powershell
